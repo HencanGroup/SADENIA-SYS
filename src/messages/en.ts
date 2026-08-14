@@ -1,0 +1,252 @@
+import type { fr } from "./fr";
+
+export type Messages = typeof fr;
+
+export const en: Messages = {
+  nav: {
+    home: "Home",
+    about: "About",
+    services: "Services",
+    web: "Web Systems",
+    projects: "Projects",
+    contact: "Contact",
+    cta: "Request a quote",
+  },
+  hero: {
+    badge: "Kinshasa, DRC",
+    title: "Innovative Systems. Reliable Infrastructure. Digital Future.",
+    subtitle:
+      "Sadenia Systems SARL designs, develops and deploys complete IT systems — from enterprise software to LAN/WAN network infrastructure.",
+    cta: "Discover Our Services",
+    cta2: "Talk to us",
+  },
+  stats: {
+    projects: "Projects completed",
+    years: "Years of experience",
+    clients: "Clients served",
+    networks: "Networks deployed",
+  },
+  services: {
+    kicker: "What we do",
+    title: "End-to-end systems services",
+    subtitle:
+      "From architecture to maintenance, we cover the full lifecycle of your IT systems.",
+    learn: "Learn more",
+    all: "All services",
+    items: [
+      {
+        title: "Systems Design & Architecture",
+        desc: "Custom IT planning and architecture for businesses of all sizes.",
+      },
+      {
+        title: "Software Development",
+        desc: "Bespoke enterprise and web software solutions.",
+      },
+      {
+        title: "Systems Deployment",
+        desc: "End-to-end hardware and software environment deployment.",
+      },
+      {
+        title: "Network Infrastructure (LAN/WAN)",
+        desc: "Structured cabling, LAN/WAN design, installation and maintenance.",
+      },
+      {
+        title: "Hardware Installation & Support",
+        desc: "Servers, workstations, peripherals and on-site technical support.",
+      },
+      {
+        title: "Web Systems Development",
+        desc: "Web apps, portals, dashboards and corporate sites (Laravel, Next.js…).",
+      },
+      {
+        title: "IT Security & Maintenance",
+        desc: "Network security audits, firewall setup and ongoing system maintenance.",
+      },
+    ],
+  },
+  why: {
+    kicker: "Why Sadenia",
+    title: "A technology partner you can trust",
+    items: [
+      {
+        title: "Expertise",
+        desc: "Certified engineers fluent in systems, networks and software.",
+      },
+      {
+        title: "Reliability",
+        desc: "Infrastructure built for uptime, security and longevity.",
+      },
+      {
+        title: "Innovation",
+        desc: "Modern technology applied to the realities of the Congolese market.",
+      },
+    ],
+  },
+  projects: {
+    kicker: "Our work",
+    title: "Featured projects",
+    subtitle: "A look at systems we have delivered across Kinshasa and the DRC.",
+    all: "All",
+    categories: {
+      networks: "Networks",
+      software: "Software",
+      web: "Web",
+      hardware: "Hardware",
+    },
+    items: [
+      {
+        title: "Multi-floor enterprise LAN",
+        desc: "Structured cabling and LAN rollout for an 8-floor headquarters in Gombe.",
+        category: "networks",
+      },
+      {
+        title: "Banking operations platform",
+        desc: "Secure line-of-business application for operations and reporting.",
+        category: "software",
+      },
+      {
+        title: "Insurance client portal",
+        desc: "Self-service web portal with customer accounts and claim tracking.",
+        category: "web",
+      },
+      {
+        title: "Server room & virtualization",
+        desc: "Rack, server, UPS installation with hardware monitoring.",
+        category: "hardware",
+      },
+      {
+        title: "Multi-site WAN interconnect",
+        desc: "Secure links between 5 provincial branches with VPN and QoS.",
+        category: "networks",
+      },
+      {
+        title: "Logistics dashboard",
+        desc: "Real-time fleet and delivery tracking for a local operator.",
+        category: "web",
+      },
+    ],
+  },
+  testimonials: {
+    kicker: "Testimonials",
+    title: "What our clients say",
+    items: [
+      {
+        quote:
+          "Sadenia rolled out our network in record time without interrupting operations. A rigorous, available team.",
+        name: "Patrick Mvumbi",
+        role: "IT Director, Financial Group",
+      },
+      {
+        quote:
+          "Their business platform transformed our daily operations. Support is still excellent months after delivery.",
+        name: "Grace Ilunga",
+        role: "Operations Director",
+      },
+      {
+        quote:
+          "A genuine technical partner: they understand local constraints and propose durable solutions.",
+        name: "Joseph Kabeya",
+        role: "Secretary General",
+      },
+    ],
+  },
+  ctaBanner: {
+    title: "Ready to transform your infrastructure?",
+    subtitle: "Let's talk about your project — the first consultation is free.",
+    button: "Contact us",
+  },
+  about: {
+    kicker: "About us",
+    title: "Building the DRC's digital infrastructure",
+    body: "Sadenia Systems SARL is a leading technology company based in Kinshasa, specializing in the design, development, and deployment of complete IT systems — from enterprise software to LAN/WAN network infrastructure.",
+    missionTitle: "Our mission",
+    mission:
+      "To give Congolese organizations robust, secure and scalable systems built to international standards and adapted to local realities.",
+    visionTitle: "Vision & values",
+    values: [
+      { title: "Technical excellence", desc: "Tested, documented and maintainable deliverables." },
+      { title: "Integrity", desc: "Full transparency on cost, timelines and risk." },
+      { title: "Proximity", desc: "Teams on the ground, right here in Kinshasa." },
+      { title: "Sustainability", desc: "Solutions designed to grow with you." },
+    ],
+    teamTitle: "Our team",
+    teamSubtitle: "Engineers, developers and technicians held to one standard.",
+    team: [
+      { name: "Daniel Sadiki", role: "Managing Director" },
+      { name: "Esther Nkosi", role: "Head of Networks" },
+      { name: "Alain Mputu", role: "Lead Developer" },
+      { name: "Sarah Lokwa", role: "Project Manager" },
+    ],
+    timelineTitle: "Our milestones",
+    timeline: [
+      { year: "2015", title: "Founded", desc: "Sadenia Systems SARL is founded in Kinshasa." },
+      { year: "2017", title: "Network division", desc: "Launch of LAN/WAN and structured cabling services." },
+      { year: "2020", title: "Software division", desc: "Software and web engineering team created." },
+      { year: "2023", title: "Expansion", desc: "Multi-site deployments across several provinces." },
+      { year: "2026", title: "Today", desc: "Over 120 projects delivered for demanding clients." },
+    ],
+    addressTitle: "Our headquarters",
+  },
+  web: {
+    kicker: "Web Systems",
+    title: "Web platforms that run your business",
+    subtitle:
+      "Corporate websites, business applications, ERP/CRM, client portals and admin dashboards.",
+    subServices: [
+      { title: "Corporate Websites", desc: "Modern, fast and search-optimized company sites." },
+      { title: "Web Applications", desc: "Custom business applications, secure and scalable." },
+      { title: "ERP / CRM Systems", desc: "Integrated sales, stock, HR and customer management." },
+      { title: "Client Portals", desc: "Secure self-service spaces for clients and partners." },
+      { title: "Admin Dashboards", desc: "Real-time steering and reporting for your operations." },
+    ],
+    stackTitle: "Our technology stack",
+    processTitle: "Our process",
+    process: [
+      { title: "Discovery", desc: "Framing requirements and objectives." },
+      { title: "Design", desc: "Wireframes, architecture and user journeys." },
+      { title: "Development", desc: "Short iterations with regular demos." },
+      { title: "Testing", desc: "Functional, performance and security testing." },
+      { title: "Deployment", desc: "Go-live and team training." },
+      { title: "Support", desc: "Corrective and evolutive maintenance." },
+    ],
+    caseTitle: "Case studies",
+  },
+  contact: {
+    kicker: "Contact",
+    title: "Let's talk about your project",
+    subtitle: "Write to us — we usually reply within 24 business hours.",
+    name: "Full name",
+    email: "Email address",
+    phone: "Phone",
+    subject: "Subject",
+    message: "Message",
+    send: "Send message",
+    sending: "Sending…",
+    success: "Thank you! Your message has been sent.",
+    subjects: {
+      services: "Services inquiry",
+      partnership: "Partnership",
+      support: "Support",
+      other: "Other",
+    },
+    infoTitle: "Contact details",
+    address: "Address",
+    phones: "Phone numbers",
+    website: "Website",
+    errors: {
+      name: "Please enter your name (min. 2 characters).",
+      email: "Invalid email address.",
+      phone: "Invalid phone number.",
+      subject: "Please choose a subject.",
+      message: "Your message must be at least 10 characters.",
+    },
+  },
+  footer: {
+    tagline: "Systems design, development and deployment in Kinshasa, DRC.",
+    services: "Services",
+    company: "Company",
+    contact: "Contact",
+    rights: "All rights reserved.",
+    backToTop: "Back to top",
+  },
+};
