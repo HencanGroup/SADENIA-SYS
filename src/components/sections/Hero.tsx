@@ -4,7 +4,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { useLocale, useT } from "@/lib/i18n";
 
 function IsoNetwork() {
-  const nodes = [
+  const nodes: [number, number][] = [
     [90, 40],
     [200, 90],
     [40, 140],
@@ -13,7 +13,7 @@ function IsoNetwork() {
     [120, 280],
     [250, 285],
   ];
-  const edges = [
+  const edges: [number, number][] = [
     [0, 1],
     [0, 2],
     [1, 4],
@@ -29,10 +29,10 @@ function IsoNetwork() {
       {edges.map(([a, b], i) => (
         <motion.line
           key={i}
-          x1={nodes[a]![0]}
-          y1={nodes[a]![1]}
-          x2={nodes[b]![0]}
-          y2={nodes[b]![1]}
+          x1={(nodes[a] as [number, number])[0]}
+          y1={(nodes[a] as [number, number])[1]}
+          x2={(nodes[b] as [number, number])[0]}
+          y2={(nodes[b] as [number, number])[1]}
           stroke="currentColor"
           strokeWidth="1"
           className="text-sky/50"
@@ -50,8 +50,8 @@ function IsoNetwork() {
           style={{ transformOrigin: `${x}px ${y}px` }}
         >
           <rect
-            x={x! - 14}
-            y={y! - 14}
+            x={x - 14}
+            y={y - 14}
             width="28"
             height="28"
             rx="4"
