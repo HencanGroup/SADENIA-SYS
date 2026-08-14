@@ -1,0 +1,39 @@
+import { useParams } from "@tanstack/react-router";
+import { en, type Messages } from "@/messages/en";
+import { fr } from "@/messages/fr";
+
+export const locales = ["fr", "en"] as const;
+export type Locale = (typeof locales)[number];
+export const defaultLocale: Locale = "fr";
+
+const dictionaries: Record<Locale, Messages> = { fr, en };
+
+export function isLocale(value: unknown): value is Locale {
+  return typeof value === "string" && (locales as readonly string[]).includes(value);
+}
+
+export function getMessages(locale: Locale): Messages {
+  return dictionaries[locale];
+}
+
+export function useLocale(): Locale {
+  const params = useParams({ strict: false }) as { locale?: string };
+  return isLocale(params.locale) ? params.locale : defaultLocale;
+}
+
+export function useT(): Messages {
+  return getMessages(useLocale());
+}
+
+export function persistLocale(locale: Locale) {
+  if (typeof document === "undefined") return;
+  document.cookie = `locale=${locale};path=/;max-age=31536000;samesite=lax`;
+}
+
+export const company = {
+  name: "Sadenia Systems SARL",
+  address: ["76, Avenue Colonel Ebeya", "C/Gombe, V/Kinshasa"],
+  email: "info@sadenia.com",
+  phones: ["+243856234045", "+243896855570", "+243824535804"],
+  website: "www.sadenia.com",
+};
