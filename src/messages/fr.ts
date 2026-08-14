@@ -245,4 +245,4 @@ export const fr = {
     rights: "Tous droits réservés.",
     backToTop: "Haut de page",
   },
-} as const;
+};
