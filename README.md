@@ -50,7 +50,8 @@ White:           #FFFFFF
 ## Pages
 
 ### `/` — Home
-- **Hero:** Full-width, animated navy-to-steel-blue gradient background. Large headline: *"Innovative Systems. Reliable Infrastructure. Digital Future."* / FR: *"Systèmes Innovants. Infrastructure Fiable. Avenir Numérique."* A CTA button: "Discover Our Services" / "Découvrez Nos Services". Subtle animated geometric SVG illustration (isometric tech/network motif).
+
+- **Hero:** Full-width, animated navy-to-steel-blue gradient background. Large headline: _"Innovative Systems. Reliable Infrastructure. Digital Future."_ / FR: _"Systèmes Innovants. Infrastructure Fiable. Avenir Numérique."_ A CTA button: "Discover Our Services" / "Découvrez Nos Services". Subtle animated geometric SVG illustration (isometric tech/network motif).
 - **Stats Bar:** Animated counters — Projects Completed, Years of Experience, Clients Served, Networks Deployed.
 - **Services Overview:** 6 icon cards with hover lift effects linking to `/services`.
 - **Why Choose Us:** 3-column grid — Expertise / Reliability / Innovation, with icons and short copy.
@@ -62,6 +63,7 @@ White:           #FFFFFF
 ---
 
 ### `/about` — About
+
 - Company story and mission paragraph.
 - Vision & values (icon list).
 - Team section (placeholder cards: name, role, avatar).
@@ -109,6 +111,7 @@ Full service cards with icon, title, description, and "Learn More" link:
 **Form fields:** Name, Email, Phone, Subject (dropdown: Services Inquiry / Partnership / Support / Other), Message — with client-side validation via React Hook Form + Zod.
 
 **Contact info sidebar:**
+
 ```
 📍 76, Avenue Colonel Ebeya, C/Gombe, V/Kinshasa
 📧 info@sadenia.com
@@ -123,15 +126,15 @@ Full service cards with icon, title, description, and "Learn More" link:
 
 ## Shared Components
 
-| Component | Description |
-|---|---|
-| `Navbar` | Logo left, nav links center, lang switcher + CTA right. Sticky with blur backdrop on scroll. Mobile hamburger |
-| `Footer` | 4 columns: Logo+tagline / Services / Company / Contact info. Copyright bar |
-| `AnimatedSection` | Framer Motion `whileInView` fade-up wrapper on every section |
-| `ServiceCard` | Icon, title, description, hover lift + blue left-border accent |
-| `Button` | Primary (navy fill), Secondary (outlined), Ghost variants |
-| `LanguageSwitcher` | EN/FR toggle with flag icons, persisted in cookie |
-| `StatCounter` | Animated number counter triggered on scroll into view |
+| Component          | Description                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------- |
+| `Navbar`           | Logo left, nav links center, lang switcher + CTA right. Sticky with blur backdrop on scroll. Mobile hamburger |
+| `Footer`           | 4 columns: Logo+tagline / Services / Company / Contact info. Copyright bar                                    |
+| `AnimatedSection`  | Framer Motion `whileInView` fade-up wrapper on every section                                                  |
+| `ServiceCard`      | Icon, title, description, hover lift + blue left-border accent                                                |
+| `Button`           | Primary (navy fill), Secondary (outlined), Ghost variants                                                     |
+| `LanguageSwitcher` | EN/FR toggle with flag icons, persisted in cookie                                                             |
+| `StatCounter`      | Animated number counter triggered on scroll into view                                                         |
 
 ---
 
