@@ -5,6 +5,13 @@ import { ArrowRight } from "lucide-react";
 
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionHeading } from "@/components/ui/section-heading";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { ProjectCard } from "@/components/sections/ProjectCard";
 import { useLocale, useT } from "@/lib/use-i18n";
 
@@ -30,17 +37,25 @@ export function FeaturedProjects() {
         </div>
       </div>
       <AnimatedSection className="mt-12">
-        <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-6 sm:px-6 lg:px-8">
-          {t.projects.items.map((p) => (
-            <div key={p.title} className="w-[300px] shrink-0 snap-start sm:w-[360px]">
-              <ProjectCard
-                title={p.title}
-                desc={p.desc}
-                category={t.projects.categories[p.category as keyof typeof t.projects.categories]}
-              />
-            </div>
-          ))}
-        </div>
+        <Carousel opts={{ align: "start" }} className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <CarouselContent>
+            {t.projects.items.map((p) => (
+              <CarouselItem key={p.title} className="basis-full sm:basis-1/2 lg:basis-1/3">
+                <div className="p-1.5">
+                  <ProjectCard
+                    title={p.title}
+                    desc={p.desc}
+                    category={
+                      t.projects.categories[p.category as keyof typeof t.projects.categories]
+                    }
+                  />
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </AnimatedSection>
     </section>
   );

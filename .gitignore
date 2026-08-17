@@ -18,6 +18,9 @@ dist-ssr
 out
 *.local
 
+# Lovable editor metadata
+.lovable/
+
 # Wrangler / Cloudflare
 .wrangler/
 .dev.vars

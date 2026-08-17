@@ -37,9 +37,15 @@ export function Navbar() {
 
   const linkClass = (href: string, exact: boolean) =>
     cn(
-      "relative rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary",
+      "relative rounded-md px-3 py-2 text-sm font-medium transition-colors",
+      scrolled
+        ? "text-muted-foreground hover:text-primary"
+        : "text-primary-foreground/80 hover:text-primary-foreground",
       isActive(href, exact) &&
-        "text-primary after:absolute after:inset-x-3 after:-bottom-0.5 after:h-0.5 after:rounded-full after:bg-steel",
+        cn(
+          "font-semibold after:absolute after:inset-x-3 after:-bottom-0.5 after:h-1 after:rounded-full",
+          scrolled ? "text-steel after:bg-steel" : "text-primary-foreground after:bg-sky",
+        ),
     );
 
   return (
@@ -85,7 +91,10 @@ export function Navbar() {
           type="button"
           aria-label="Menu"
           onClick={() => setOpen((v) => !v)}
-          className="rounded-md p-2 text-primary lg:hidden"
+          className={cn(
+            "rounded-md p-2 lg:hidden",
+            scrolled ? "text-primary" : "text-primary-foreground",
+          )}
         >
           {open ? <X className="size-5" /> : <Menu className="size-5" />}
         </button>
@@ -110,7 +119,7 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 pb-4 sm:px-6">
-            <LanguageSwitcher />
+            <LanguageSwitcher invert={!scrolled} />
             <Link
               href={`/${locale}/contact`}
               onClick={() => setOpen(false)}
