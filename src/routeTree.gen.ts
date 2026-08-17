@@ -14,6 +14,7 @@ import { Route as LocaleRouteImport } from './routes/$locale'
 import { Route as LocaleIndexRouteImport } from './routes/$locale.index'
 import { Route as LocaleAboutRouteImport } from './routes/$locale.about'
 import { Route as LocaleServicesRouteImport } from './routes/$locale.services'
+import { Route as LocaleWebSystemsRouteImport } from './routes/$locale.web-systems'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -40,18 +41,25 @@ const LocaleServicesRoute = LocaleServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => LocaleRoute,
 } as any)
+const LocaleWebSystemsRoute = LocaleWebSystemsRouteImport.update({
+  id: '/web-systems',
+  path: '/web-systems',
+  getParentRoute: () => LocaleRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/$locale': typeof LocaleRouteWithChildren
   '/$locale/about': typeof LocaleAboutRoute
   '/$locale/services': typeof LocaleServicesRoute
+  '/$locale/web-systems': typeof LocaleWebSystemsRoute
   '/$locale/': typeof LocaleIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/$locale/about': typeof LocaleAboutRoute
   '/$locale/services': typeof LocaleServicesRoute
+  '/$locale/web-systems': typeof LocaleWebSystemsRoute
   '/$locale': typeof LocaleIndexRoute
 }
 export interface FileRoutesById {
@@ -60,20 +68,32 @@ export interface FileRoutesById {
   '/$locale': typeof LocaleRouteWithChildren
   '/$locale/about': typeof LocaleAboutRoute
   '/$locale/services': typeof LocaleServicesRoute
+  '/$locale/web-systems': typeof LocaleWebSystemsRoute
   '/$locale/': typeof LocaleIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/$locale' | '/$locale/about' | '/$locale/services' | '/$locale/'
+    | '/'
+    | '/$locale'
+    | '/$locale/about'
+    | '/$locale/services'
+    | '/$locale/web-systems'
+    | '/$locale/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/$locale/about' | '/$locale/services' | '/$locale'
+  to:
+    | '/'
+    | '/$locale/about'
+    | '/$locale/services'
+    | '/$locale/web-systems'
+    | '/$locale'
   id:
     | '__root__'
     | '/'
     | '/$locale'
     | '/$locale/about'
     | '/$locale/services'
+    | '/$locale/web-systems'
     | '/$locale/'
   fileRoutesById: FileRoutesById
 }
@@ -119,18 +139,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof LocaleServicesRouteImport
       parentRoute: typeof LocaleRoute
     }
+    '/$locale/web-systems': {
+      id: '/$locale/web-systems'
+      path: '/web-systems'
+      fullPath: '/$locale/web-systems'
+      preLoaderRoute: typeof LocaleWebSystemsRouteImport
+      parentRoute: typeof LocaleRoute
+    }
   }
 }
 
 interface LocaleRouteChildren {
   LocaleAboutRoute: typeof LocaleAboutRoute
   LocaleServicesRoute: typeof LocaleServicesRoute
+  LocaleWebSystemsRoute: typeof LocaleWebSystemsRoute
   LocaleIndexRoute: typeof LocaleIndexRoute
 }
 
 const LocaleRouteChildren: LocaleRouteChildren = {
   LocaleAboutRoute: LocaleAboutRoute,
   LocaleServicesRoute: LocaleServicesRoute,
+  LocaleWebSystemsRoute: LocaleWebSystemsRoute,
   LocaleIndexRoute: LocaleIndexRoute,
 }
 
