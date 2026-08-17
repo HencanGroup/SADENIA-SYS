@@ -36,7 +36,7 @@ export function LanguageSwitcher({ invert = false }: { invert?: boolean }) {
                 : "text-muted-foreground hover:text-primary",
           )}
         >
-          {l === "fr" ? "🇫🇷 FR" : "🇬🇧 EN"}
+          {l}
         </button>
       ))}
     </div>

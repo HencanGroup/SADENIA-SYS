@@ -180,6 +180,11 @@
   background-image: var(--gradient-hero);
 }
 
+@utility gradient-primary {
+  background-image: var(--gradient-hero);
+  background-color: var(--primary);
+}
+
 @utility gradient-text {
   background-image: var(--gradient-accent);
   background-clip: text;

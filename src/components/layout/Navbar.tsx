@@ -20,13 +20,13 @@ export function Navbar() {
   }, []);
 
   const links = [
-    { to: `/${locale}`, label: t.nav.home, exact: true },
-    { to: `/${locale}/about`, label: t.nav.about },
-    { to: `/${locale}/services`, label: t.nav.services },
-    { to: `/${locale}/web-systems`, label: t.nav.web },
-    { to: `/${locale}/projects`, label: t.nav.projects },
-    { to: `/${locale}/contact`, label: t.nav.contact },
-  ];
+    { to: "/$locale", label: t.nav.home, exact: true },
+    { to: "/$locale/about", label: t.nav.about, exact: false },
+    { to: "/$locale/services", label: t.nav.services, exact: false },
+    { to: "/$locale/web-systems", label: t.nav.web, exact: false },
+    { to: "/$locale/projects", label: t.nav.projects, exact: false },
+    { to: "/$locale/contact", label: t.nav.contact, exact: false },
+  ] as const;
 
   return (
     <header
@@ -38,7 +38,12 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-6 px-4 py-3 sm:px-6 lg:px-8">
-        <Link to={`/${locale}`} className="flex shrink-0 items-center" onClick={() => setOpen(false)}>
+        <Link
+          to="/$locale"
+          params={{ locale }}
+          className="flex shrink-0 items-center"
+          onClick={() => setOpen(false)}
+        >
           <img src={logoAsset.url} alt="Sadenia Systems SARL" className="h-10 w-auto" />
         </Link>
 
@@ -47,6 +52,7 @@ export function Navbar() {
             <li key={l.to}>
               <Link
                 to={l.to}
+                params={{ locale }}
                 activeOptions={{ exact: l.exact }}
                 activeProps={{ "data-active": "true" }}
                 className="relative rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary data-[active=true]:text-primary data-[active=true]:after:absolute data-[active=true]:after:inset-x-3 data-[active=true]:after:-bottom-0.5 data-[active=true]:after:h-0.5 data-[active=true]:after:rounded-full data-[active=true]:after:bg-steel"
@@ -60,7 +66,8 @@ export function Navbar() {
         <div className="hidden items-center gap-3 lg:flex">
           <LanguageSwitcher />
           <Link
-            to={`/${locale}/contact`}
+            to="/$locale/contact"
+            params={{ locale }}
             className="rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-steel"
           >
             {t.nav.cta}
@@ -84,6 +91,7 @@ export function Navbar() {
               <li key={l.to}>
                 <Link
                   to={l.to}
+                  params={{ locale }}
                   activeOptions={{ exact: l.exact }}
                   activeProps={{ "data-active": "true" }}
                   onClick={() => setOpen(false)}
@@ -97,7 +105,8 @@ export function Navbar() {
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 pb-4 sm:px-6">
             <LanguageSwitcher />
             <Link
-              to={`/${locale}/contact`}
+              to="/$locale/contact"
+              params={{ locale }}
               onClick={() => setOpen(false)}
               className="rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground"
             >
