@@ -25,7 +25,7 @@ export function ServicesView() {
                 icon={serviceIcons[i % serviceIcons.length]!}
                 title={s.title}
                 desc={s.desc}
-                href={s.title.toLowerCase().includes("web") ? "web-systems" : "services"}
+                href="solutions"
               />
             </AnimatedSection>
           ))}

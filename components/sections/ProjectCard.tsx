@@ -4,16 +4,25 @@ export function ProjectCard({
   title,
   desc,
   category,
+  image = "",
 }: {
   title: string;
   desc: string;
   category: string;
+  image?: string;
 }) {
   return (
     <article className="card-lift flex h-full flex-col overflow-hidden rounded-md border border-border bg-card">
       <div className="gradient-hero relative flex h-44 items-center justify-center">
-        <div className="grid-pattern absolute inset-0 opacity-30" />
-        <Layers className="relative size-10 text-sky" />
+        {image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={image} alt={title} className="absolute inset-0 h-full w-full object-cover" />
+        ) : (
+          <>
+            <div className="grid-pattern absolute inset-0 opacity-30" />
+            <Layers className="relative size-10 text-sky" />
+          </>
+        )}
       </div>
       <div className="flex flex-1 flex-col p-6">
         <span className="w-fit rounded-full bg-secondary px-2.5 py-1 text-[11px] font-semibold tracking-wide text-steel uppercase">

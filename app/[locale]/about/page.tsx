@@ -81,14 +81,23 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 delay={i * 0.06}
                 className="card-lift rounded-md border border-border bg-card p-6 text-center"
               >
-                <div className="gradient-primary mx-auto flex size-16 items-center justify-center rounded-full">
-                  <span className="font-display text-lg font-bold text-primary-foreground">
-                    {m.name
-                      .split(" ")
-                      .map((p) => p[0])
-                      .join("")}
-                  </span>
-                </div>
+                {"photo" in m && m.photo ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={(m as { photo: string }).photo}
+                    alt={m.name}
+                    className="mx-auto size-16 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="gradient-primary mx-auto flex size-16 items-center justify-center rounded-full">
+                    <span className="font-display text-lg font-bold text-primary-foreground">
+                      {m.name
+                        .split(" ")
+                        .map((p) => p[0])
+                        .join("")}
+                    </span>
+                  </div>
+                )}
                 <h3 className="mt-4 text-base text-primary">{m.name}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{m.role}</p>
               </AnimatedSection>

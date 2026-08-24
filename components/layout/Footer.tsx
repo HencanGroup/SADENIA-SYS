@@ -22,11 +22,17 @@ export function Footer() {
             {t.footer.tagline}
           </p>
           <div className="mt-5 flex gap-2">
-            {[Linkedin, Facebook, Twitter].map((Icon, i) => (
+            {[
+              { icon: Linkedin, href: company.social.linkedin, label: "LinkedIn" },
+              { icon: Facebook, href: company.social.facebook, label: "Facebook" },
+              { icon: Twitter, href: company.social.twitter, label: "Twitter" },
+            ].map(({ icon: Icon, href, label }) => (
               <a
-                key={i}
-                href="#"
-                aria-label="Social link"
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
                 className="rounded-md border border-primary-foreground/20 p-2 transition-colors hover:bg-steel"
               >
                 <Icon className="size-4" />
@@ -40,7 +46,7 @@ export function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-primary-foreground/70">
             {t.services.items.slice(0, 5).map((s) => (
               <li key={s.title}>
-                <Link href={`/${locale}/services`} className="transition-colors hover:text-sky">
+                <Link href={`/${locale}/solutions`} className="transition-colors hover:text-sky">
                   {s.title}
                 </Link>
               </li>
@@ -57,8 +63,18 @@ export function Footer() {
               </Link>
             </li>
             <li>
-              <Link href={`/${locale}/web-systems`} className="hover:text-sky">
-                {t.nav.web}
+              <Link href={`/${locale}/solutions`} className="hover:text-sky">
+                {t.nav.solutions}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/${locale}/technology`} className="hover:text-sky">
+                {t.nav.technology}
+              </Link>
+            </li>
+            <li>
+              <Link href={`/${locale}/hardware`} className="hover:text-sky">
+                {t.nav.hardware}
               </Link>
             </li>
             <li>

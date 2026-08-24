@@ -2,17 +2,18 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "services": "Services",
-    "web": "Systèmes Web",
+    "solutions": "Solutions",
+    "technology": "Technologie",
+    "hardware": "Matériel",
     "projects": "Projets",
     "contact": "Contact",
     "cta": "Demander un devis"
   },
   "hero": {
     "badge": "Kinshasa, RDC",
-    "title": "Systèmes Innovants. Infrastructure Fiable. Avenir Numérique.",
-    "subtitle": "Sadenia Systems SARL conçoit, développe et déploie des systèmes informatiques complets — des logiciels d'entreprise aux infrastructures réseau LAN/WAN.",
-    "cta": "Découvrez Nos Services",
+    "title": "Logiciel. Infrastructure. Matériel — Un partenaire technologique.",
+    "subtitle": "Sadenia Systems développe des systèmes d'exploitation, des plateformes Android, des systèmes microfinance et de collecte de revenus — tout en construisant vers l'assemblage intégré de laptops.",
+    "cta": "Découvrir nos solutions",
     "cta2": "Nous contacter"
   },
   "stats": {
@@ -22,59 +23,90 @@
     "networks": "Réseaux déployés"
   },
   "services": {
-    "kicker": "Nos expertises",
-    "title": "Des services de bout en bout",
-    "subtitle": "De la conception à la maintenance, nous couvrons tout le cycle de vie de vos systèmes informatiques.",
+    "kicker": "Nos solutions",
+    "title": "Des systèmes technologiques qui font tourner les organisations",
+    "subtitle": "Systèmes d'exploitation, plateformes Android, systèmes microfinance, collecte de revenus et gestion institutionnelle — conçus pour le marché congolais.",
     "learn": "En savoir plus",
-    "all": "Tous les services",
+    "all": "Toutes les solutions",
     "items": [
       {
-        "title": "Conception & Architecture de Systèmes",
-        "desc": "Planification et architecture informatique sur mesure pour les entreprises de toutes tailles."
+        "title": "Systèmes d'exploitation",
+        "desc": "Environnements d'exploitation personnalisés et configurés pour les entreprises et institutions.",
+        "problem": "Les organisations ont besoin d'environnements informatiques sécurisés, stables et standardisés qui fonctionnent de manière fiable dans les conditions d'infrastructure locales.",
+        "purpose": "Déployer et maintenir des environnements d'exploitation robustes adaptés aux exigences institutionnelles et enterprise.",
+        "capabilities": ["Configuration et durcissement des systèmes", "Déploiement et image entreprise", "Gestion des correctifs de sécurité", "Installation multi-utilisateurs"],
+        "sectors": ["Gouvernement", "Entreprise", "Éducation", "Santé"]
       },
       {
-        "title": "Développement Logiciel",
-        "desc": "Solutions logicielles d'entreprise et web entièrement personnalisées."
+        "title": "Systèmes Android",
+        "desc": "Plateformes et applications Android pour les opérations métier mobiles et les services terrain.",
+        "problem": "Les opérations terrain et les équipes mobiles ont besoin d'applications fiables, fonctionnant hors ligne, sur des appareils Android abordables.",
+        "purpose": "Développer des plateformes Android permettant la collecte de données mobile, les rapports terrain et les opérations métier.",
+        "capabilities": ["Applications Android sur mesure", "Collecte de données hors ligne", "Rapports et tableaux de bord terrain", "Gestion et déploiement des appareils"],
+        "sectors": ["ONG", "Agriculture", "Logistique", "Services terrain"]
       },
       {
-        "title": "Déploiement de Systèmes",
-        "desc": "Déploiement complet des environnements matériels et logiciels."
+        "title": "Systèmes microfinance",
+        "desc": "Solutions logicielles complètes pour les institutions de microfinance — crédits, épargne, gestion clients et reporting.",
+        "problem": "Les institutions de microfinance ont besoin de logiciels intégrés pour gérer les prêts, l'épargne, les portefeuilles clients, la réglementation et les opérations quotidiennes.",
+        "purpose": "Fournir des plateformes de gestion microfinance complètes qui automatisent les flux de crédit et assurent la conformité réglementaire.",
+        "capabilities": ["Origination et suivi des prêts", "Gestion des comptes d'épargne", "Gestion du portefeuille clients", "Reporting réglementaire et financier", "Intégration mobile banking"],
+        "sectors": ["Institutions de microfinance", "Coopératives", "SACCOs", "Finance rurale"]
       },
       {
-        "title": "Infrastructure Réseau (LAN/WAN)",
-        "desc": "Câblage structuré, conception LAN/WAN, installation et maintenance."
+        "title": "Systèmes de collecte de revenus",
+        "desc": "Plateformes numériques de collecte et de gestion des revenus pour les agences gouvernementales et institutions.",
+        "problem": "Les agences gouvernementales et les services publics ont besoin de systèmes transparents et efficaces pour collecter taxes, frais et revenus tout en réduisant la fraude.",
+        "purpose": "Numériser et automatiser les processus de collecte de revenus pour améliorer la transparence, la responsabilité et l'efficacité.",
+        "capabilities": ["Traitement des paiements numériques", "Évaluation des taxes et frais", "Tableaux de bord de collecte en temps réel", "Suivi des reçus et de la conformité", "Intégration mobile money et banques"],
+        "sectors": ["Gouvernement", "Services publics", "Municipalités", "Institutions publiques"]
       },
       {
-        "title": "Installation & Support Matériel",
-        "desc": "Serveurs, postes de travail, périphériques et support technique sur site."
+        "title": "Gestion institutionnelle (IHMS)",
+        "desc": "Systèmes intégrés de gestion sanitaire et institutionnelle pour les organisations de santé et le secteur public.",
+        "problem": "Les institutions de santé et le secteur public ont besoin de systèmes intégrés pour gérer les données patients, les ressources et les opérations institutionnelles.",
+        "purpose": "Fournir des plateformes de gestion intégrée qui rationalisent la prestation des soins de santé et l'administration institutionnelle.",
+        "capabilities": ["Gestion des patients et dossiers", "Suivi des ressources et inventaires", "Reporting et analytique", "Gestion du personnel et des flux de travail"],
+        "sectors": ["Hôpitaux", "Cliniques", "Santé publique", "Institutions gouvernementales"]
       },
       {
-        "title": "Développement de Systèmes Web",
-        "desc": "Applications web, portails, tableaux de bord et sites corporatifs (Laravel, Next.js…)."
-      },
-      {
-        "title": "Sécurité & Maintenance IT",
-        "desc": "Audits de sécurité réseau, configuration de pare-feu et maintenance continue."
+        "title": "Systèmes & Infrastructure",
+        "desc": "Serveurs, réseaux et environnements techniques qui hébergent et supportent les solutions technologiques de Sadenia.",
+        "purpose": "Construire et maintenir l'infrastructure serveur, réseau et cloud qui fait fonctionner les plateformes technologiques de Sadenia.",
+        "capabilities": ["Déploiement et gestion des serveurs", "Conception et implémentation réseau", "Infrastructure cloud et hébergement", "Surveillance et maintenance"],
+        "sectors": ["Tous les secteurs"]
       }
     ]
   },
   "why": {
     "kicker": "Pourquoi Sadenia",
-    "title": "Un partenaire technologique de confiance",
+    "title": "Trois capacités. Un partenaire.",
     "items": [
       {
-        "title": "Expertise",
-        "desc": "Une équipe d'ingénieurs certifiés maîtrisant les systèmes, réseaux et logiciels."
+        "title": "Logiciel & Systèmes",
+        "desc": "Systèmes d'exploitation, plateformes Android, systèmes microfinance, collecte de revenus et gestion institutionnelle — conçus spécifiquement pour le marché congolais."
       },
       {
-        "title": "Fiabilité",
-        "desc": "Des infrastructures pensées pour la disponibilité, la sécurité et la durée."
+        "title": "Infrastructure",
+        "desc": "Serveurs, réseaux et environnements cloud qui font fonctionner nos solutions technologiques à travers la RDC."
       },
       {
-        "title": "Innovation",
-        "desc": "Des technologies modernes appliquées aux réalités du marché congolais."
+        "title": "Matériel futur",
+        "desc": "En construction vers l'assemblage intégré de laptops — étendant notre chaîne de valeur du logiciel aux solutions technologiques complètes."
       }
     ]
+  },
+  "roadmapPreview": {
+    "kicker": "Et maintenant",
+    "title": "Vers un matériel intégré",
+    "subtitle": "Au cours des six prochains mois, Sadenia Systems établit un laboratoire d'assemblage de laptops entièrement opérationnel — étendant notre capacité technologique du logiciel aux solutions matérielles complètes.",
+    "phases": [
+      { "title": "Planification", "desc": "Approvisionnement en composants et préparation des locaux." },
+      { "title": "Mise en place", "desc": "Aménagement de l'espace d'assemblage et installation." },
+      { "title": "Production pilote", "desc": "Premiers lots d'assemblage et validation qualité." },
+      { "title": "Opérations complètes", "desc": "Production commerciale et lancement marché." }
+    ],
+    "cta": "Voir notre feuille de route"
   },
   "projects": {
     "kicker": "Réalisations",
@@ -125,19 +157,19 @@
     "title": "Ce que disent nos clients",
     "items": [
       {
-        "quote": "Sadenia a déployé notre réseau en un temps record, sans interrompre nos activités. Une équipe rigoureuse et disponible.",
+        "quote": "Sadenia a déployé notre infrastructure réseau multi-sites sans interrompre nos opérations quotidiennes. Leur rigueur technique et leur disponibilité ont fait la différence.",
         "name": "Patrick Mvumbi",
         "role": "Directeur IT, Groupe Financier"
       },
       {
-        "quote": "Leur plateforme métier a transformé notre gestion quotidienne. Le support reste excellent des mois après la livraison.",
+        "quote": "La plateforme microfinance qu'ils ont construite a transformé la gestion de nos crédits et portefeuilles clients. Leur support reste excellent des mois après la livraison.",
         "name": "Grace Ilunga",
-        "role": "Directrice des Opérations"
+        "role": "Directrice des Opérations, Institution de microfinance"
       },
       {
-        "quote": "Un vrai partenaire technique : ils comprennent nos contraintes locales et proposent des solutions durables.",
+        "quote": "Un vrai partenaire technologique — ils comprennent les réalités d'opérer en RDC et proposent des solutions qui fonctionnent vraiment ici.",
         "name": "Joseph Kabeya",
-        "role": "Secrétaire Général"
+        "role": "Secrétaire Général, Agence gouvernementale"
       }
     ]
   },
@@ -193,50 +225,117 @@
         "desc": "Déploiements multi-sites à travers plusieurs provinces."
       },
       {
+        "year": "2025",
+        "title": "Portefeuille systèmes",
+        "desc": "Systèmes microfinance, collecte de revenus et gestion institutionnelle lancés."
+      },
+      {
         "year": "2026",
-        "title": "Aujourd'hui",
-        "desc": "Plus de 120 projets livrés pour des clients exigeants."
+        "title": "Initiative matériel",
+        "desc": "Projet de laboratoire d'assemblage de laptops lancé — vers une capacité intégrée logiciel-et-matériel."
       }
     ],
     "addressTitle": "Notre siège"
   },
-  "web": {
-    "kicker": "Systèmes Web",
-    "title": "Des plateformes web qui font tourner votre activité",
-    "subtitle": "Sites corporatifs, applications métier, ERP/CRM, portails clients et tableaux de bord d'administration.",
-    "subServices": [
+  "technology": {
+    "kicker": "Technologie & Infrastructure",
+    "title": "Les systèmes et infrastructures derrière nos solutions",
+    "subtitle": "Des serveurs et réseaux aux environnements cloud — la base technique qui fait fonctionner les plateformes technologiques de Sadenia.",
+    "overview": "Aperçu technologique",
+    "overviewDesc": "Sadenia Systems conçoit, déploie et gère la pile technologique complète nécessaire pour fournir des solutions logicielles et systèmes fiables à travers la RDC.",
+    "capabilitiesTitle": "Nos capacités techniques",
+    "capabilities": [
       {
-        "title": "Sites Corporatifs",
-        "desc": "Vitrines modernes, rapides et optimisées pour le référencement."
+        "title": "Infrastructure serveur",
+        "desc": "Déploiement, virtualisation et gestion de serveurs enterprise pour les environnements institutionnels et commerciaux.",
+        "items": ["Serveurs physiques et virtuels", "Clustering et basculement serveurs", "Surveillance et maintenance matérielle", "Sauvegarde et reprise après sinistre"]
       },
       {
-        "title": "Applications Web",
-        "desc": "Applications métier sur mesure, sécurisées et évolutives."
+        "title": "Architecture réseau",
+        "desc": "Conception, déploiement et gestion d'infrastructures réseau LAN, WAN et sécurisées multi-sites.",
+        "items": ["Câblage structuré", "Conception et déploiement LAN/WAN", "VPN et connectivité sécurisée", "Surveillance et optimisation réseau"]
       },
       {
-        "title": "Systèmes ERP / CRM",
-        "desc": "Gestion intégrée des ventes, stocks, RH et relations clients."
+        "title": "Cloud & Hébergement",
+        "desc": "Configuration et gestion d'infrastructures cloud pour un hébergement d'applications évoluable et accessible.",
+        "items": ["Provisionnement de serveurs cloud", "Hébergement d'applications", "Gestion de bases de données", "CDN et optimisation des performances"]
       },
       {
-        "title": "Portails Clients",
-        "desc": "Espaces self-service sécurisés pour vos clients et partenaires."
-      },
-      {
-        "title": "Tableaux de Bord Admin",
-        "desc": "Pilotage et reporting en temps réel de vos opérations."
+        "title": "Sécurité & Conformité",
+        "desc": "Durcissement de la sécurité, contrôle d'accès et mesures de conformité pour protéger les systèmes et données institutionnels.",
+        "items": ["Pare-feu et contrôle d'accès", "Audits et durcissement de sécurité", "SSL/TLS et chiffrement", "Conformité et protection des données"]
       }
     ],
-    "stackTitle": "Notre stack technique",
-    "processTitle": "Notre processus",
-    "process": [
-      { "title": "Découverte", "desc": "Cadrage des besoins et des objectifs." },
-      { "title": "Conception", "desc": "Maquettes, architecture et parcours utilisateur." },
-      { "title": "Développement", "desc": "Itérations courtes avec démonstrations régulières." },
-      { "title": "Tests", "desc": "Recette fonctionnelle, performance et sécurité." },
-      { "title": "Déploiement", "desc": "Mise en production et formation des équipes." },
-      { "title": "Support", "desc": "Maintenance évolutive et corrective." }
+    "environmentsTitle": "Environnements d'exploitation",
+    "environments": ["Serveurs Linux", "Windows Server", "Virtualisation (VMware, Proxmox)", "Déploiements Docker et conteneurisés", "Systèmes de bases de données (PostgreSQL, MySQL)", "Gestion des appareils mobiles"]
+  },
+  "hardware": {
+    "kicker": "Matériel & Assembly",
+    "title": "Vers une capacité intégrée logiciel-et-matériel",
+    "subtitle": "Sadenia Systems étend sa chaîne de valeur technologique avec une opération prévue d'assemblage de laptops et de matériel.",
+    "introTitle": "Une expansion stratégique",
+    "intro": "L'assemblage de matériel représente la prochaine phase de croissance de Sadenia Systems — passant du développement logiciel et systèmes à la fabrication technologique intégrée. Cette initiative s'inscrit dans notre engagement à fournir des solutions technologiques complètes au marché congolais.",
+    "visionTitle": "Notre vision",
+    "vision": "Établir un laboratoire d'assemblage de laptops entièrement opérationnel dans les six mois, permettant à Sadenia de fournir du matériel abordable et de qualité aux côtés de ses capacités logicielles et systèmes.",
+    "approachTitle": "Notre approche",
+    "approach": "Plutôt que d'importer des produits finis, Sadenia construit une capacité d'assemblage locale — créant des emplois, développant l'expertise technique et fournissant du matériel adapté aux besoins des organisations et consommateurs congolais.",
+    "phasesTitle": "Phases de développement",
+    "phases": [
+      {
+        "title": "Phase 1 — Planification & Approvisionnement",
+        "desc": "Approvisionnement en composants, partenariats fournisseurs et préparation des locaux pour le laboratoire d'assemblage."
+      },
+      {
+        "title": "Phase 2 — Mise en place du labo",
+        "desc": "Installation de l'espace d'assemblage, outillage, processus de contrôle qualité et formation du personnel."
+      },
+      {
+        "title": "Phase 3 — Production pilote",
+        "desc": "Premiers lots d'assemblage, validation de la qualité et tests de performance."
+      },
+      {
+        "title": "Phase 4 — Opérations complètes",
+        "desc": "Production commerciale, expansion de la gamme de produits et distribution sur le marché."
+      }
     ],
-    "caseTitle": "Études de cas"
+    "note": "Les spécifications détaillées des produits, la capacité de production et les offres commerciales seront disponibles une fois le laboratoire d'assemblage opérationnel et que la direction aura approuvé la divulgation publique."
+  },
+  "roadmap": {
+    "kicker": "Feuille de route Innovation",
+    "title": "Notre objectif à six mois",
+    "subtitle": "Une direction claire vers l'établissement d'une capacité locale d'assemblage de laptops.",
+    "objectiveTitle": "L'objectif",
+    "objective": "Développer un laboratoire d'assemblage de laptops entièrement opérationnel dans les six prochains mois — positionnant Sadenia Systems comme une entreprise technologique intégrée logiciel-et-matériel.",
+    "timelineTitle": "Calendrier de la feuille de route",
+    "milestones": [
+      {
+        "month": "Mois 1–2",
+        "title": "Fondation",
+        "desc": "Finaliser les exigences des locaux, sécuriser les accords d'approvisionnement en composants et compléter la conception du laboratoire."
+      },
+      {
+        "month": "Mois 2–3",
+        "title": "Infrastructure",
+        "desc": "Aménager l'espace d'assemblage, installer l'équipement et établir les procédures de contrôle qualité."
+      },
+      {
+        "month": "Mois 3–4",
+        "title": "Construction de l'équipe",
+        "desc": "Recruter et former les techniciens d'assemblage, établir les flux de travail et les normes de sécurité."
+      },
+      {
+        "month": "Mois 4–5",
+        "title": "Tests pilotes",
+        "desc": "Exécuter les premiers lots d'assemblage, valider la qualité du produit et affiner les processus."
+      },
+      {
+        "month": "Mois 5–6",
+        "title": "Préparation au lancement",
+        "desc": "Augmenter la capacité de production, finaliser la gamme de produits et se préparer au lancement commercial."
+      }
+    ],
+    "note": "Cette feuille de route représente une initiative stratégique, pas une capacité existante. Toutes les affirmations et calendriers sont soumis à l'approbation de la direction et à la préparation opérationnelle.",
+    "cta": "Contactez-nous pour en savoir plus"
   },
   "contact": {
     "kicker": "Contact",

@@ -41,10 +41,10 @@ function Counter({ value, suffix }: { value: number; suffix?: string }) {
 export function Stats() {
   const t = useT();
   const items = [
-    { value: 128, suffix: "+", label: t.stats.projects },
-    { value: 11, suffix: "", label: t.stats.years },
-    { value: 64, suffix: "+", label: t.stats.clients },
-    { value: 45, suffix: "", label: t.stats.networks },
+    { value: 120, suffix: "+", label: t.stats.projects },
+    { value: 10, suffix: "+", label: t.stats.years },
+    { value: 50, suffix: "+", label: t.stats.clients },
+    { value: 30, suffix: "+", label: t.stats.networks },
   ];
 
   return (

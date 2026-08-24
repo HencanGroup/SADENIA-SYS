@@ -39,8 +39,20 @@ export function ContactView() {
     defaultValues: { name: "", email: "", phone: "", subject: "services", message: "" },
   });
 
-  const onSubmit = async (_values: FormValues) => {
-    await new Promise((r) => setTimeout(r, 800));
+  const onSubmit = async (values: FormValues) => {
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      toast.error(data.error ?? "Something went wrong. Please try again.");
+      return;
+    }
+
     toast.success(c.success);
     reset();
   };

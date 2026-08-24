@@ -1,3 +1,3 @@
-import { MonitorCog, Code2, Rocket, Network, Server, Globe, ShieldCheck } from "lucide-react";
+import { Monitor, Smartphone, Landmark, Receipt, Building2, Server } from "lucide-react";
 
-export const serviceIcons = [MonitorCog, Code2, Rocket, Network, Server, Globe, ShieldCheck];
+export const serviceIcons = [Monitor, Smartphone, Landmark, Receipt, Building2, Server];

@@ -5,6 +5,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { CtaBanner } from "@/components/sections/CtaBanner";
 import { FeaturedProjects } from "@/components/sections/FeaturedProjects";
 import { Hero } from "@/components/sections/Hero";
+import { RoadmapPreview } from "@/components/sections/RoadmapPreview";
 import { ServiceCard } from "@/components/sections/ServiceCard";
 import { Stats } from "@/components/sections/Stats";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -33,7 +34,7 @@ export function HomeView() {
                   icon={serviceIcons[i]!}
                   title={s.title}
                   desc={s.desc}
-                  href={i === 5 ? "web-systems" : "services"}
+                  href="solutions"
                 />
               </AnimatedSection>
             ))}
@@ -42,6 +43,7 @@ export function HomeView() {
       </section>
       <WhyUs />
       <FeaturedProjects />
+      <RoadmapPreview />
       <Testimonials />
       <CtaBanner />
     </>

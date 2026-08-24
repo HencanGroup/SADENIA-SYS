@@ -1,11 +1,11 @@
 "use client";
 
-import { Award, Lightbulb, ShieldCheck } from "lucide-react";
+import { Code2, Server, Cpu } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedSection";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { useT } from "@/lib/use-i18n";
 
-const icons = [Award, ShieldCheck, Lightbulb];
+const icons = [Code2, Server, Cpu];
 
 export function WhyUs() {
   const t = useT();
@@ -15,7 +15,7 @@ export function WhyUs() {
         <SectionHeading kicker={t.why.kicker} title={t.why.title} />
         <div className="mt-14 grid gap-6 md:grid-cols-3">
           {t.why.items.map((item, i) => {
-            const Icon = icons[i] ?? Award;
+            const Icon = icons[i] ?? Code2;
             return (
               <AnimatedSection key={item.title} delay={i * 0.1}>
                 <div className="h-full rounded-md border border-border bg-card p-8 text-center card-lift">

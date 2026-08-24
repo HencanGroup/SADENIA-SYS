@@ -9,12 +9,12 @@ export function ServiceCard({
   icon: Icon,
   title,
   desc,
-  href = "services",
+  href = "solutions",
 }: {
   icon: LucideIcon;
   title: string;
   desc: string;
-  href?: "services" | "web-systems";
+  href?: string;
 }) {
   const locale = useLocale();
   const t = useT();
@@ -26,7 +26,7 @@ export function ServiceCard({
       <h3 className="mt-5 text-lg text-primary">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{desc}</p>
       <Link
-        href={`/${locale}/${href === "services" ? "services" : "web-systems"}`}
+        href={`/${locale}/${href}`}
         className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-steel"
       >
         {t.services.learn}

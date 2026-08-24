@@ -111,7 +111,7 @@ export function Hero() {
             className="mt-9 flex flex-wrap gap-3"
           >
             <Link
-              href={`/${locale}/services`}
+              href={`/${locale}/solutions`}
               className="group inline-flex items-center gap-2 rounded-md bg-sky px-6 py-3.5 text-sm font-semibold text-sky-foreground transition-colors hover:bg-primary-foreground"
             >
               {t.hero.cta}

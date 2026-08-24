@@ -28,4 +28,9 @@ export const company = {
   email: "info@sadenia.com",
   phones: ["+243856234045", "+243896855570", "+243824535804"],
   website: "www.sadenia.com",
+  social: {
+    linkedin: "https://linkedin.com/company/sadenia-systems",
+    facebook: "https://facebook.com/sadeniasystems",
+    twitter: "https://twitter.com/SadeniaSystems",
+  },
 };

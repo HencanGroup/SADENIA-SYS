@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import Script from "next/script";
 import type { ReactNode } from "react";
 
 import { Toaster } from "@/components/ui/sonner";
@@ -19,6 +20,8 @@ const inter = Inter({
   display: "swap",
 });
 
+const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
 export const metadata: Metadata = {
   title: "Sadenia Systems SARL — Systèmes, Réseaux & Logiciels",
   description:
@@ -29,17 +32,37 @@ export const metadata: Metadata = {
     title: "Sadenia Systems SARL",
     description: "Systèmes innovants. Infrastructure fiable. Avenir numérique.",
     type: "website",
+    siteName: "Sadenia Systems SARL",
+    locale: "fr_RDC",
+    alternateLocale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Lovable",
+    site: "@SadeniaSystems",
   },
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.sadenia.com"),
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr" className={`${poppins.variable} ${inter.variable}`}>
       <body>
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        )}
         {children}
         <Toaster position="top-right" richColors />
       </body>

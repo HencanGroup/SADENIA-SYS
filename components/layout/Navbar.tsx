@@ -26,8 +26,9 @@ export function Navbar() {
   const links = [
     { href: `/${locale}`, label: t.nav.home, exact: true },
     { href: `/${locale}/about`, label: t.nav.about, exact: false },
-    { href: `/${locale}/services`, label: t.nav.services, exact: false },
-    { href: `/${locale}/web-systems`, label: t.nav.web, exact: false },
+    { href: `/${locale}/solutions`, label: t.nav.solutions, exact: false },
+    { href: `/${locale}/technology`, label: t.nav.technology, exact: false },
+    { href: `/${locale}/hardware`, label: t.nav.hardware, exact: false },
     { href: `/${locale}/projects`, label: t.nav.projects, exact: false },
     { href: `/${locale}/contact`, label: t.nav.contact, exact: false },
   ] as const;

@@ -2,17 +2,18 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
-    "web": "Web Systems",
+    "solutions": "Solutions",
+    "technology": "Technology",
+    "hardware": "Hardware",
     "projects": "Projects",
     "contact": "Contact",
     "cta": "Request a quote"
   },
   "hero": {
     "badge": "Kinshasa, DRC",
-    "title": "Innovative Systems. Reliable Infrastructure. Digital Future.",
-    "subtitle": "Sadenia Systems SARL designs, develops and deploys complete IT systems — from enterprise software to LAN/WAN network infrastructure.",
-    "cta": "Discover Our Services",
+    "title": "Software. Infrastructure. Hardware — One technology partner.",
+    "subtitle": "Sadenia Systems develops operating systems, Android platforms, microfinance and revenue collection systems — while building toward integrated laptop assembly.",
+    "cta": "Explore Our Solutions",
     "cta2": "Talk to us"
   },
   "stats": {
@@ -22,59 +23,90 @@
     "networks": "Networks deployed"
   },
   "services": {
-    "kicker": "What we do",
-    "title": "End-to-end systems services",
-    "subtitle": "From architecture to maintenance, we cover the full lifecycle of your IT systems.",
+    "kicker": "Our solutions",
+    "title": "Technology systems that power organizations",
+    "subtitle": "Operating systems, Android platforms, microfinance systems, revenue collection and institutional management — built for the Congolese market.",
     "learn": "Learn more",
-    "all": "All services",
+    "all": "All solutions",
     "items": [
       {
-        "title": "Systems Design & Architecture",
-        "desc": "Custom IT planning and architecture for businesses of all sizes."
+        "title": "Operating Systems",
+        "desc": "Custom and configured operating system environments for enterprise and institutional use.",
+        "problem": "Organizations need secure, stable, and standardized computing environments that work reliably in local infrastructure conditions.",
+        "purpose": "Deploy and maintain robust operating system environments tailored to institutional and enterprise requirements.",
+        "capabilities": ["System configuration and hardening", "Enterprise deployment and imaging", "Security patch management", "Multi-user environment setup"],
+        "sectors": ["Government", "Enterprise", "Education", "Healthcare"]
       },
       {
-        "title": "Software Development",
-        "desc": "Bespoke enterprise and web software solutions."
+        "title": "Android Systems",
+        "desc": "Android-based platforms and applications for mobile business operations and field services.",
+        "problem": "Field operations and mobile workforce need reliable, offline-capable applications that run on affordable Android devices.",
+        "purpose": "Develop Android platforms that enable mobile data collection, field reporting, and business operations.",
+        "capabilities": ["Custom Android applications", "Offline data collection", "Field reporting and dashboards", "Device management and deployment"],
+        "sectors": ["NGOs", "Agriculture", "Logistics", "Field services"]
       },
       {
-        "title": "Systems Deployment",
-        "desc": "End-to-end hardware and software environment deployment."
+        "title": "Microfinance Systems",
+        "desc": "Complete software solutions for microfinance institutions — lending, savings, client management and reporting.",
+        "problem": "Microfinance institutions need integrated software to manage loans, savings, client portfolios, regulatory reporting, and daily operations efficiently.",
+        "purpose": "Provide end-to-end microfinance management platforms that automate lending workflows and ensure regulatory compliance.",
+        "capabilities": ["Loan origination and tracking", "Savings account management", "Client portfolio management", "Regulatory and financial reporting", "Mobile banking integration"],
+        "sectors": ["Microfinance institutions", "Cooperatives", "SACCOs", "Rural finance"]
       },
       {
-        "title": "Network Infrastructure (LAN/WAN)",
-        "desc": "Structured cabling, LAN/WAN design, installation and maintenance."
+        "title": "Revenue Collection Systems",
+        "desc": "Digital revenue collection and management platforms for government agencies and institutions.",
+        "problem": "Government agencies and utilities need transparent, efficient systems to collect taxes, fees, and revenues while reducing fraud and leakages.",
+        "purpose": "Digitize and automate revenue collection processes to improve transparency, accountability, and collection efficiency.",
+        "capabilities": ["Digital payment processing", "Tax and fee assessment", "Real-time collection dashboards", "Receipt and compliance tracking", "Integration with mobile money and banking"],
+        "sectors": ["Government", "Utilities", "Municipalities", "Public institutions"]
       },
       {
-        "title": "Hardware Installation & Support",
-        "desc": "Servers, workstations, peripherals and on-site technical support."
+        "title": "Institutional Management (IHMS)",
+        "desc": "Integrated health and institutional management systems for healthcare and public sector organizations.",
+        "problem": "Healthcare institutions and public sector organizations need integrated systems to manage patient data, resources, and institutional operations.",
+        "purpose": "Deliver integrated management platforms that streamline healthcare delivery and institutional administration.",
+        "capabilities": ["Patient and records management", "Resource and inventory tracking", "Reporting and analytics", "Staff and workflow management"],
+        "sectors": ["Hospitals", "Clinics", "Public health", "Government institutions"]
       },
       {
-        "title": "Web Systems Development",
-        "desc": "Web apps, portals, dashboards and corporate sites (Laravel, Next.js…)."
-      },
-      {
-        "title": "IT Security & Maintenance",
-        "desc": "Network security audits, firewall setup and ongoing system maintenance."
+        "title": "Systems & Infrastructure",
+        "desc": "Servers, networks and technical environments that support and host Sadenia's technology solutions.",
+        "purpose": "Build and maintain the server, network, and cloud infrastructure that powers Sadenia's technology platforms.",
+        "capabilities": ["Server deployment and management", "Network design and implementation", "Cloud and hosting infrastructure", "Monitoring and maintenance"],
+        "sectors": ["All sectors"]
       }
     ]
   },
   "why": {
     "kicker": "Why Sadenia",
-    "title": "A technology partner you can trust",
+    "title": "Three capabilities. One partner.",
     "items": [
       {
-        "title": "Expertise",
-        "desc": "Certified engineers fluent in systems, networks and software."
+        "title": "Software & Systems",
+        "desc": "Operating systems, Android platforms, microfinance systems, revenue collection and institutional management — purpose-built for the Congolese market."
       },
       {
-        "title": "Reliability",
-        "desc": "Infrastructure built for uptime, security and longevity."
+        "title": "Infrastructure",
+        "desc": "Servers, networks and cloud environments that power and host our technology solutions across the DRC."
       },
       {
-        "title": "Innovation",
-        "desc": "Modern technology applied to the realities of the Congolese market."
+        "title": "Future Hardware",
+        "desc": "Building toward integrated laptop assembly — extending our value chain from software to complete technology solutions."
       }
     ]
+  },
+  "roadmapPreview": {
+    "kicker": "What's next",
+    "title": "Building toward integrated hardware",
+    "subtitle": "Over the next six months, Sadenia Systems is establishing a fully operational laptop-assembly lab — extending our technology capability from software to complete hardware solutions.",
+    "phases": [
+      { "title": "Planning & Sourcing", "desc": "Component sourcing and facility preparation." },
+      { "title": "Lab Setup", "desc": "Assembly workspace and equipment installation." },
+      { "title": "Pilot Production", "desc": "Initial assembly runs and quality validation." },
+      { "title": "Full Operations", "desc": "Commercial production and market launch." }
+    ],
+    "cta": "View our roadmap"
   },
   "projects": {
     "kicker": "Our work",
@@ -125,19 +157,19 @@
     "title": "What our clients say",
     "items": [
       {
-        "quote": "Sadenia rolled out our network in record time without interrupting operations. A rigorous, available team.",
+        "quote": "Sadenia deployed our multi-site network infrastructure without interrupting daily operations. Their technical rigor and availability made the difference.",
         "name": "Patrick Mvumbi",
-        "role": "IT Director, Financial Group"
+        "role": "IT Director, Groupe Financier"
       },
       {
-        "quote": "Their business platform transformed our daily operations. Support is still excellent months after delivery.",
+        "quote": "The microfinance platform they built transformed how we manage loans and client portfolios. Their support has been excellent months after delivery.",
         "name": "Grace Ilunga",
-        "role": "Operations Director"
+        "role": "Operations Director, Microfinance Institution"
       },
       {
-        "quote": "A genuine technical partner: they understand local constraints and propose durable solutions.",
+        "quote": "A genuine technology partner — they understand the realities of operating in the DRC and propose solutions that actually work here.",
         "name": "Joseph Kabeya",
-        "role": "Secretary General"
+        "role": "Secretary General, Government Agency"
       }
     ]
   },
@@ -193,41 +225,117 @@
         "desc": "Multi-site deployments across several provinces."
       },
       {
+        "year": "2025",
+        "title": "Systems portfolio",
+        "desc": "Microfinance, revenue collection and institutional management systems launched."
+      },
+      {
         "year": "2026",
-        "title": "Today",
-        "desc": "Over 120 projects delivered for demanding clients."
+        "title": "Hardware initiative",
+        "desc": "Laptop-assembly lab project initiated — building toward integrated software-and-hardware capability."
       }
     ],
     "addressTitle": "Our headquarters"
   },
-  "web": {
-    "kicker": "Web Systems",
-    "title": "Web platforms that run your business",
-    "subtitle": "Corporate websites, business applications, ERP/CRM, client portals and admin dashboards.",
-    "subServices": [
-      { "title": "Corporate Websites", "desc": "Modern, fast and search-optimized company sites." },
-      { "title": "Web Applications", "desc": "Custom business applications, secure and scalable." },
+  "technology": {
+    "kicker": "Technology & Infrastructure",
+    "title": "The systems and infrastructure behind our solutions",
+    "subtitle": "From servers and networks to cloud environments — the technical foundation that powers Sadenia's technology platforms.",
+    "overview": "Technology Overview",
+    "overviewDesc": "Sadenia Systems designs, deploys and manages the complete technology stack required to deliver reliable software and systems solutions across the DRC.",
+    "capabilitiesTitle": "Our Technical Capabilities",
+    "capabilities": [
       {
-        "title": "ERP / CRM Systems",
-        "desc": "Integrated sales, stock, HR and customer management."
+        "title": "Server Infrastructure",
+        "desc": "Enterprise server deployment, virtualization and management for institutional and commercial environments.",
+        "items": ["Physical and virtual servers", "Server clustering and failover", "Hardware monitoring and maintenance", "Backup and disaster recovery"]
       },
-      { "title": "Client Portals", "desc": "Secure self-service spaces for clients and partners." },
       {
-        "title": "Admin Dashboards",
-        "desc": "Real-time steering and reporting for your operations."
+        "title": "Network Architecture",
+        "desc": "Design, deployment and management of LAN, WAN and secure network infrastructure across multiple sites.",
+        "items": ["Structured cabling", "LAN/WAN design and deployment", "VPN and secure connectivity", "Network monitoring and optimization"]
+      },
+      {
+        "title": "Cloud & Hosting",
+        "desc": "Cloud infrastructure setup and management for scalable, accessible application hosting.",
+        "items": ["Cloud server provisioning", "Application hosting", "Database management", "CDN and performance optimization"]
+      },
+      {
+        "title": "Security & Compliance",
+        "desc": "Security hardening, access control and compliance measures to protect institutional systems and data.",
+        "items": ["Firewall and access control", "Security audits and hardening", "SSL/TLS and encryption", "Compliance and data protection"]
       }
     ],
-    "stackTitle": "Our technology stack",
-    "processTitle": "Our process",
-    "process": [
-      { "title": "Discovery", "desc": "Framing requirements and objectives." },
-      { "title": "Design", "desc": "Wireframes, architecture and user journeys." },
-      { "title": "Development", "desc": "Short iterations with regular demos." },
-      { "title": "Testing", "desc": "Functional, performance and security testing." },
-      { "title": "Deployment", "desc": "Go-live and team training." },
-      { "title": "Support", "desc": "Corrective and evolutive maintenance." }
+    "environmentsTitle": "Operating Environments",
+    "environments": ["Linux servers", "Windows Server", "Virtualization (VMware, Proxmox)", "Docker and containerized deployments", "Database systems (PostgreSQL, MySQL)", "Mobile device management"]
+  },
+  "hardware": {
+    "kicker": "Hardware & Assembly",
+    "title": "Building toward integrated software-and-hardware capability",
+    "subtitle": "Sadenia Systems is expanding its technology value chain with a planned laptop and hardware assembly operation.",
+    "introTitle": "A Strategic Expansion",
+    "intro": "Hardware assembly represents the next phase of Sadenia Systems' growth — extending from software and systems development into integrated technology manufacturing. This initiative is part of our commitment to delivering complete technology solutions to the Congolese market.",
+    "visionTitle": "Our Vision",
+    "vision": "To establish a fully operational laptop-assembly lab within six months, enabling Sadenia to deliver affordable, quality hardware alongside its software and systems capabilities.",
+    "approachTitle": "Our Approach",
+    "approach": "Rather than importing finished products, Sadenia is building local assembly capacity — creating jobs, building technical expertise, and providing hardware tailored to the needs of Congolese organizations and consumers.",
+    "phasesTitle": "Development Phases",
+    "phases": [
+      {
+        "title": "Phase 1 — Planning & Sourcing",
+        "desc": "Component sourcing, supplier partnerships and facility preparation for the assembly lab."
+      },
+      {
+        "title": "Phase 2 — Lab Setup",
+        "desc": "Assembly lab installation, tooling, quality control processes and staff training."
+      },
+      {
+        "title": "Phase 3 — Pilot Production",
+        "desc": "Initial laptop assembly runs, quality validation and performance testing."
+      },
+      {
+        "title": "Phase 4 — Full Operations",
+        "desc": "Commercial production, product range expansion and market distribution."
+      }
     ],
-    "caseTitle": "Case studies"
+    "note": "Detailed product specifications, manufacturing capacity and commercial offerings will be available once the assembly lab is operational and management has approved public disclosure."
+  },
+  "roadmap": {
+    "kicker": "Innovation Roadmap",
+    "title": "Our six-month objective",
+    "subtitle": "A clear direction toward establishing local laptop-assembly capability.",
+    "objectiveTitle": "The Goal",
+    "objective": "Develop a fully operational laptop-assembly lab within the next six months — positioning Sadenia Systems as an integrated software-and-hardware technology company.",
+    "timelineTitle": "Roadmap Timeline",
+    "milestones": [
+      {
+        "month": "Month 1–2",
+        "title": "Foundation",
+        "desc": "Finalize facility requirements, secure component supply agreements and complete lab design."
+      },
+      {
+        "month": "Month 2–3",
+        "title": "Infrastructure",
+        "desc": "Set up assembly workspace, install equipment and establish quality control procedures."
+      },
+      {
+        "month": "Month 3–4",
+        "title": "Team Building",
+        "desc": "Recruit and train assembly technicians, establish operational workflows and safety standards."
+      },
+      {
+        "month": "Month 4–5",
+        "title": "Pilot Runs",
+        "desc": "Execute initial assembly batches, validate product quality and refine processes."
+      },
+      {
+        "month": "Month 5–6",
+        "title": "Launch Readiness",
+        "desc": "Scale production capacity, finalize product lineup and prepare for commercial launch."
+      }
+    ],
+    "note": "This roadmap represents a strategic initiative, not an existing capability. All claims and timelines are subject to management approval and operational readiness.",
+    "cta": "Get in touch to learn more"
   },
   "contact": {
     "kicker": "Contact",
