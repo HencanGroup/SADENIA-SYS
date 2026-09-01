@@ -74,7 +74,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <section className="bg-background py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading title={a.teamTitle} subtitle={a.teamSubtitle} />
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {a.team.map((m, i) => (
               <AnimatedSection
                 key={m.name}

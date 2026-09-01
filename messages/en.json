@@ -197,10 +197,12 @@
     "teamTitle": "Our team",
     "teamSubtitle": "Engineers, developers and technicians held to one standard.",
     "team": [
-      { "name": "Daniel Sadiki", "role": "Managing Director" },
-      { "name": "Esther Nkosi", "role": "Head of Networks" },
-      { "name": "Alain Mputu", "role": "Lead Developer" },
-      { "name": "Sarah Lokwa", "role": "Project Manager" }
+      { "name": "Henry Charles Maithya", "role": "CEO" },
+      { "name": "Sarah Kapinga", "role": "Head of Finances (CFO)" },
+      { "name": "Anthony Wang'ang'a Gathingi", "role": "Head of Operations" },
+      { "name": "Monica Nduku Wanjiru", "role": "HR" },
+      { "name": "Stancelaus Lumasia", "role": "Senior Developer" },
+      { "name": "Aggrey Mutagaywa", "role": "Junior Developer" }
     ],
     "timelineTitle": "Our milestones",
     "timeline": [

@@ -197,10 +197,12 @@
     "teamTitle": "Notre équipe",
     "teamSubtitle": "Des ingénieurs, développeurs et techniciens réunis autour d'un même standard.",
     "team": [
-      { "name": "Daniel Sadiki", "role": "Directeur Général" },
-      { "name": "Esther Nkosi", "role": "Responsable Réseaux" },
-      { "name": "Alain Mputu", "role": "Lead Développeur" },
-      { "name": "Sarah Lokwa", "role": "Cheffe de Projet" }
+      { "name": "Henry Charles Maithya", "role": "PDG" },
+      { "name": "Sarah Kapinga", "role": "Responsable des Finances (CFO)" },
+      { "name": "Anthony Wang'ang'a Gathingi", "role": "Responsable des Opérations" },
+      { "name": "Monica Nduku Wanjiru", "role": "RH" },
+      { "name": "Stancelaus Lumasia", "role": "Développeur Senior" },
+      { "name": "Aggrey Mutagaywa", "role": "Développeur Junior" }
     ],
     "timelineTitle": "Nos étapes clés",
     "timeline": [
