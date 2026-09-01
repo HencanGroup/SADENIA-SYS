@@ -1,0 +1,17 @@
+[build]
+  command = "NEXT_PUBLIC_SITE_URL=$URL npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Production — main branch
+[context.production]
+
+# Staging — develop branch
+[context.develop]
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
