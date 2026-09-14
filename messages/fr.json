@@ -195,31 +195,26 @@
       { "title": "Durabilité", "desc": "Des solutions pensées pour évoluer avec vous." }
     ],
     "teamTitle": "Notre équipe",
-    "teamSubtitle": "Des ingénieurs, développeurs et techniciens réunis autour d'un même standard.",
+    "teamSubtitle": "Ingénieurs systèmes & développeurs animés par la soif de savoir et l'agenda de numérisation de la RDC.",
     "team": [
-      { "name": "Henry Charles Maithya", "role": "PDG" },
+      { "name": "Henry Maithya", "role": "PDG" },
       { "name": "Sarah Kapinga", "role": "Responsable des Finances (CFO)" },
-      { "name": "Anthony Wang'ang'a Gathingi", "role": "Responsable des Opérations" },
-      { "name": "Monica Nduku Wanjiru", "role": "RH" },
+      { "name": "Anthony Gathingi", "role": "Responsable des Opérations" },
+      { "name": "Monica Wanjiru", "role": "RH" },
       { "name": "Stancelaus Lumasia", "role": "Développeur Senior" },
       { "name": "Aggrey Mutagaywa", "role": "Développeur Junior" }
     ],
     "timelineTitle": "Nos étapes clés",
     "timeline": [
       {
-        "year": "2015",
+        "year": "2019",
         "title": "Création",
         "desc": "Sadenia Systems SARL est fondée à Kinshasa."
       },
       {
-        "year": "2017",
+        "year": "2021",
         "title": "Pôle réseaux",
         "desc": "Lancement de l'activité LAN/WAN et câblage structuré."
-      },
-      {
-        "year": "2020",
-        "title": "Développement logiciel",
-        "desc": "Création de l'équipe logicielle et web."
       },
       {
         "year": "2023",

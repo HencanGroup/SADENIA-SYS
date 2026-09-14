@@ -195,31 +195,26 @@
       { "title": "Sustainability", "desc": "Solutions designed to grow with you." }
     ],
     "teamTitle": "Our team",
-    "teamSubtitle": "Engineers, developers and technicians held to one standard.",
+    "teamSubtitle": "System Engineers & developers driven by thirst for knowledge and DRC digitization agenda.",
     "team": [
-      { "name": "Henry Charles Maithya", "role": "CEO" },
+      { "name": "Henry Maithya", "role": "CEO" },
       { "name": "Sarah Kapinga", "role": "Head of Finances (CFO)" },
-      { "name": "Anthony Wang'ang'a Gathingi", "role": "Head of Operations" },
-      { "name": "Monica Nduku Wanjiru", "role": "HR" },
+      { "name": "Anthony Gathingi", "role": "Head of Operations" },
+      { "name": "Monica Wanjiru", "role": "HR" },
       { "name": "Stancelaus Lumasia", "role": "Senior Developer" },
       { "name": "Aggrey Mutagaywa", "role": "Junior Developer" }
     ],
     "timelineTitle": "Our milestones",
     "timeline": [
       {
-        "year": "2015",
+        "year": "2019",
         "title": "Founded",
         "desc": "Sadenia Systems SARL is founded in Kinshasa."
       },
       {
-        "year": "2017",
+        "year": "2021",
         "title": "Network division",
         "desc": "Launch of LAN/WAN and structured cabling services."
-      },
-      {
-        "year": "2020",
-        "title": "Software division",
-        "desc": "Software and web engineering team created."
       },
       {
         "year": "2023",
