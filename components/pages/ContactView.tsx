@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Globe, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Mail, Map, MapPin, Phone, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
@@ -175,9 +175,18 @@ export function ContactView() {
               </div>
               <div>
                 <dt className="flex items-center gap-2 font-semibold text-primary">
-                  <Globe className="size-4 text-steel" /> {c.website}
+                  <Map className="size-4 text-steel" /> {c.map}
                 </dt>
-                <dd className="mt-1.5 text-muted-foreground">{company.website}</dd>
+                <dd className="mt-1.5">
+                  <a
+                    href="https://maps.app.goo.gl/6YvEHwRrVSH3RUt68?g_st=aw"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-steel"
+                  >
+                    {c.mapLink}
+                  </a>
+                </dd>
               </div>
             </dl>
           </AnimatedSection>

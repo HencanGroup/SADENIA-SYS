@@ -131,11 +131,6 @@
         "category": "software"
       },
       {
-        "title": "Insurance client portal",
-        "desc": "Self-service web portal with customer accounts and claim tracking.",
-        "category": "web"
-      },
-      {
         "title": "Server room & virtualization",
         "desc": "Rack, server, UPS installation with hardware monitoring.",
         "category": "hardware"
@@ -148,6 +143,26 @@
       {
         "title": "Logistics dashboard",
         "desc": "Real-time fleet and delivery tracking for a local operator.",
+        "category": "web"
+      },
+      {
+        "title": "Tax Collection System",
+        "desc": "Revenue collection system for Kinshasa, DRC.",
+        "category": "web"
+      },
+      {
+        "title": "School Management System",
+        "desc": "Student, staff and academic management for Katheka Boys.",
+        "category": "web"
+      },
+      {
+        "title": "Fan/Creator Platform",
+        "desc": "Fan and creator platform (Raha-tele) connecting audiences and content.",
+        "category": "web"
+      },
+      {
+        "title": "Integrated Hotel Management System",
+        "desc": "Integrated hotel management covering bookings, rooms and billing.",
         "category": "web"
       }
     ]
@@ -356,6 +371,8 @@
     "address": "Address",
     "phones": "Phone numbers",
     "website": "Website",
+    "map": "Map",
+    "mapLink": "View on Google Maps",
     "errors": {
       "name": "Please enter your name (min. 2 characters).",
       "email": "Invalid email address.",

@@ -44,7 +44,7 @@ export function HomeView() {
       <WhyUs />
       <FeaturedProjects />
       <RoadmapPreview />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CtaBanner />
     </>
   );

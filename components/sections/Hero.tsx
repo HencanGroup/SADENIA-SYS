@@ -62,7 +62,20 @@ function IsoNetwork() {
             className="fill-sky/15 stroke-sky/70"
             strokeWidth="1.2"
           />
-          <circle cx={x} cy={y} r="3.5" className="fill-sky" />
+          <motion.circle
+            cx={x}
+            cy={y}
+            className="fill-sky"
+            initial={{ r: 3.5, opacity: 0.6 }}
+            animate={{ r: [3.5, 7.5, 3.5], opacity: [0.5, 1, 0.5] }}
+            transition={{
+              duration: 2.4,
+              times: [0, 0.5, 1],
+              repeat: Infinity,
+              delay: 0.8 + i * 0.45,
+              ease: "easeInOut",
+            }}
+          />
         </motion.g>
       ))}
     </svg>

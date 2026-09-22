@@ -41,15 +41,13 @@ function Counter({ value, suffix }: { value: number; suffix?: string }) {
 export function Stats() {
   const t = useT();
   const items = [
-    { value: 120, suffix: "+", label: t.stats.projects },
-    { value: 10, suffix: "+", label: t.stats.years },
-    { value: 50, suffix: "+", label: t.stats.clients },
-    { value: 30, suffix: "+", label: t.stats.networks },
+    { value: 10, suffix: "+", label: t.stats.projects },
+    { value: 5, suffix: "+", label: t.stats.years },
   ];
 
   return (
     <section className="bg-primary">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-14 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-4 py-14 sm:grid-cols-2 sm:px-6 lg:grid-cols-2 lg:px-8">
         {items.map((s, i) => (
           <motion.div
             key={s.label}
