@@ -12,6 +12,8 @@ import { company } from "@/lib/i18n";
 import { useT } from "@/lib/use-i18n";
 import { cn } from "@/lib/utils";
 
+const MAP_URL = "https://maps.app.goo.gl/6YvEHwRrVSH3RUt68?g_st=aw";
+
 export function ContactView() {
   const t = useT();
   const c = t.contact;
@@ -141,11 +143,18 @@ export function ContactView() {
                   <MapPin className="size-4 text-steel" /> {c.address}
                 </dt>
                 <dd className="mt-1.5 text-muted-foreground">
-                  {company.address.map((l) => (
-                    <span key={l} className="block">
-                      {l}
-                    </span>
-                  ))}
+                  <a
+                    href={MAP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block hover:text-steel"
+                  >
+                    {company.address.map((l) => (
+                      <span key={l} className="block">
+                        {l}
+                      </span>
+                    ))}
+                  </a>
                 </dd>
               </div>
               <div>
@@ -179,7 +188,7 @@ export function ContactView() {
                 </dt>
                 <dd className="mt-1.5">
                   <a
-                    href="https://maps.app.goo.gl/6YvEHwRrVSH3RUt68?g_st=aw"
+                    href={MAP_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-steel"
