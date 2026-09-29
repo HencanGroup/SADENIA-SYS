@@ -93,14 +93,14 @@ export function Footer() {
         <div>
           <h3 className="text-sm font-semibold tracking-wide uppercase">{t.footer.contact}</h3>
           <ul className="mt-4 space-y-3 text-sm text-primary-foreground/70">
-            <li className="flex gap-2">
+            {/* <li className="flex gap-2">
               <MapPin className="mt-0.5 size-4 shrink-0 text-sky" />
               <span>
                 {company.address[0]}
                 <br />
                 {company.address[1]}
               </span>
-            </li>
+            </li> */}
             <li className="flex gap-2">
               <Mail className="mt-0.5 size-4 shrink-0 text-sky" />
               <a href={`mailto:${company.email}`} className="hover:text-sky">
@@ -116,10 +116,6 @@ export function Footer() {
                   </a>
                 ))}
               </span>
-            </li>
-            <li className="flex gap-2">
-              <Globe className="mt-0.5 size-4 shrink-0 text-sky" />
-              <span>{company.website}</span>
             </li>
           </ul>
         </div>
