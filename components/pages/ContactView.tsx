@@ -138,7 +138,7 @@ export function ContactView() {
           <AnimatedSection delay={0.1} className="rounded-md bg-surface p-8">
             <h2 className="text-xl text-primary">{c.infoTitle}</h2>
             <dl className="mt-6 space-y-6 text-sm">
-              <div>
+              {/* <div>
                 <dt className="flex items-center gap-2 font-semibold text-primary">
                   <MapPin className="size-4 text-steel" /> {c.address}
                 </dt>
@@ -156,7 +156,7 @@ export function ContactView() {
                     ))}
                   </a>
                 </dd>
-              </div>
+              </div> */}
               <div>
                 <dt className="flex items-center gap-2 font-semibold text-primary">
                   <Phone className="size-4 text-steel" /> {c.phones}
@@ -182,7 +182,7 @@ export function ContactView() {
                   </a>
                 </dd>
               </div>
-              <div>
+              {/* <div>
                 <dt className="flex items-center gap-2 font-semibold text-primary">
                   <Map className="size-4 text-steel" /> {c.map}
                 </dt>
@@ -196,7 +196,7 @@ export function ContactView() {
                     {c.mapLink}
                   </a>
                 </dd>
-              </div>
+              </div> */}
             </dl>
           </AnimatedSection>
         </div>
